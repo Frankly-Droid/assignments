@@ -67,7 +67,6 @@
 // console.log(validatePhoneNumber(phoneNumber));
 
 function validatePhoneNumber(phoneNumber) {
-    // Match +234 or 0, followed by 2-digit prefix, optional hyphens, 7 digits
     const numberPattern = /^((\+234[-]?)|0)([7-9][0-9])[-]?([0-9]{3,}[-]?[0-9]{4})$/;
     if (numberPattern.test(phoneNumber)) return "Phone number is Valid";
     return "Invalid Number";
