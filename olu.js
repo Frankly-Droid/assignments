@@ -54,14 +54,24 @@
 //     return "Invalid Number";
 // }
 // Example Usage    
+// function validatePhoneNumber(phoneNumber) {
+//     // const numberPattern = /^(\+234|0)([7-9](0|1))([-]?[0-9]){7}$/;
+//     const numberPattern = /^(\+234|0)([7-9][0-9])([-]?[0-9]){7}$/;
+//     if (numberPattern.test(phoneNumber)) return "Phone number is Valid";
+
+//     return "Invalid Number";
+// }
+
+// const phoneNumber = "+234-80-03641051";
+
+// console.log(validatePhoneNumber(phoneNumber));
+
 function validatePhoneNumber(phoneNumber) {
-    const numberPattern = /^0[7-9]{1}[0-1]{1}[0-9]{8}$/;
-
+    // Match +234 or 0, followed by 2-digit prefix, optional hyphens, 7 digits
+    const numberPattern = /^((\+234[-]?)|0)([7-9][0-9])[-]?([0-9]{3,}[-]?[0-9]{4})$/;
     if (numberPattern.test(phoneNumber)) return "Phone number is Valid";
-
     return "Invalid Number";
 }
 
-const phoneNumber = "0810364105";
-
-console.log(validatePhoneNumber(phoneNumber));
+const phoneNumber = "070-384-8191";
+console.log(validatePhoneNumber(phoneNumber)); // Output: "Phone number is Valid"
