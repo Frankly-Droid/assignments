@@ -10,7 +10,7 @@
 // console.log(pattern);
 
 // function validateCreditCard(cardNumber) {
-//     const visaPattern = /^4[0-9]{12}(?:[0-9]{3})?$/;
+//     const visaPattern = /^(4[0-9]{12})[0-9]{3}?$/;
 //     const masterCardPattern = /^5[1-5][0-9]{14}$/;
 //     const vervePattern = /^(506|6500|5000)[0-9]{12}$/
 
@@ -67,10 +67,10 @@
 // console.log(validatePhoneNumber(phoneNumber));
 
 function validatePhoneNumber(phoneNumber) {
-    const numberPattern = /^((\+234[-]?)|0)([7-9][0-9])[-]?([0-9]{3,}[-]?[0-9]{4})$/;
+    const numberPattern = /^((\+234[-]?)|0)([7-9][0-1])[-]?([0-9]{3,5}[-]?[0-9]{4})$/;
     if (numberPattern.test(phoneNumber)) return "Phone number is Valid";
     return "Invalid Number";
 }
 
-const phoneNumber = "070-384-8191";
+const phoneNumber = "070-382222-8191";
 console.log(validatePhoneNumber(phoneNumber)); // Output: "Phone number is Valid"
