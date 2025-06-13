@@ -66,11 +66,27 @@
 
 // console.log(validatePhoneNumber(phoneNumber));
 
-function validatePhoneNumber(phoneNumber) {
-    const numberPattern = /^((\+234[-]?)|0)([7-9][0-1])[-]?([0-9]{3,5}[-]?[0-9]{4})$/;
-    if (numberPattern.test(phoneNumber)) return "Phone number is Valid";
-    return "Invalid Number";
+// function validatePhoneNumber(phoneNumber) {
+//     const numberPattern = /^((\+234[-]?)|0)([7-9][0-1])[-]?([0-9]{3,5}[-]?[0-9]{4})$/;
+//     if (numberPattern.test(phoneNumber)) return "Phone number is Valid";
+//     return "Invalid Number";
+// }
+
+// const phoneNumber = "070-382222-8191";
+// console.log(validatePhoneNumber(phoneNumber)); // Output: "Phone number is Valid"
+
+
+function first() {
+    console.log("This is the first");
+    second();
+}
+function first() {
+    console.log("This is the second");
+}
+function first() {
+    console.log("This is the third");
 }
 
-const phoneNumber = "070-382222-8191";
-console.log(validatePhoneNumber(phoneNumber)); // Output: "Phone number is Valid"
+first();
+second();
+third();
