@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Validator</title>
+</head>
+<body>
+    <label for="cardNumber">Enter your credit card number:</label>
+    <input type="text" id="cardNumber">
+    <button onclick="checkCardType()">Validate</button>
+    <p id="result"></p>
+
+    <script>
+        function validateCreditCard(cardNumber) {
+            const visaPattern = /^4[0-9]{12}(?:[0-9]{3})?$/;
+            const masterCardPattern = /^5[1-5][0-9]{14}$/;
+            const vervePattern = /^(506|6500|5000)[0-9]{12}$/;
+
+            if (visaPattern.test(cardNumber)) return "Visa";
+            if (masterCardPattern.test(cardNumber)) return "MasterCard";
+            if (vervePattern.test(cardNumber)) return "Verve";
+            
+            return "Invalid card number";
+        }
+
+        function checkCardType() {
+            const cardNumber = document.getElementById("cardNumber").value;
+            const result = validateCreditCard(cardNumber);
+            document.getElementById("result").innerText = "Card Type: " + result;
+        }
+    </script>
+</body>
+</html>

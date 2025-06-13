@@ -1,0 +1,338 @@
+* {
+    /* box-sizing: border-box; */
+}
+
+body {
+    margin: auto;    
+    padding: 60px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+.navbar div img {
+    height: 60px;
+    width: 60px;
+}
+.nav-hca{
+    display: flex;
+    color: orangered;
+}
+
+.nav-hca div {
+    margin: 0px 20px;
+    padding: 15px 0px; */
+    /* align-items: center; */
+   
+}
+
+.navbutton  {
+    display: flex;
+}
+
+.navbutton div button {
+    height: 30px;
+    width: 70px;
+     margin: 10px 10px;    
+     color: white;
+     background-color: orangered;
+     padding: 1px;
+     border-radius: 5px;
+     border: 0px;
+     
+     
+}
+
+.navbutton div button:hover {
+    background-color: rgb(206, 98, 9);
+    transition: all 0.3s ease;
+}
+
+
+
+/* this is for the first section */
+.sec1 {
+    display: flex;
+    flex-direction: ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome {
+    font-family: 'Gill Sans';
+    font-size: medium;
+}
+
+.welcome button {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    background-color: orangered;
+    color: beige;
+    border-radius: 5px;
+    border: 0px; 
+
+}
+
+.welcome button:hover {
+    background-color: rgb(206, 98, 9);
+    transition: all 0.3s ease;
+}
+.welcome-image img {
+    height: 200px;
+    width: 300px; 
+    /* padding: 20px 0px; */
+     
+}
+
+/* this is for the option selectors*/
+
+.order-block {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.sec2 {
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    border: 3px solid #73AD21;
+    margin: auto;
+}
+
+.choco-cake img {
+    width: 250px;
+}
+
+.cake {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cake img {
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    align-content: center;
+    /* padding: 10px 10px; */
+}
+
+.price {
+    display: flex;
+    /* padding: 15px 0px; */
+    justify-content: space-between;
+    
+
+}
+
+.price button {
+    height: 20px;
+    margin: 40px 0px;
+    justify-content: center;
+
+}
+
+.price p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.order-button {
+    align-items: center;
+}
+
+.order-button button {
+    height: 40px;
+    width: max-content;
+    font-size: 18px;
+    background-color: orangered;
+    color: beige;
+    border-radius: 5px;
+    border: 0px;
+    
+}
+
+.flavour button {
+    height: 20px;
+    font-size: 10px;
+    color: beige;
+    border-radius: 5px;
+    border: 0px; 
+}
+
+.choco1 {
+    background-color: orangered;
+}
+.red1 {
+    background-color: orangered;
+}
+.van1 {
+    background-color: orangered;
+}
+
+
+/* sec3 */
+
+.sec3 {
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    border: 3px solid #73AD21;
+    margin: auto;
+}
+
+.choco-cake img {
+    width: 250px;
+}
+
+.cake {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cake img {
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    align-content: center;
+    /* padding: 10px 10px; */
+}
+
+.price {
+    display: flex;
+    /* padding: 15px 0px; */
+    justify-content: space-between;
+    
+
+}
+
+.price button {
+    height: 20px;
+    margin: 40px 0px;
+    justify-content: center;
+
+}
+
+.price p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.order-button {
+    align-items: center;
+}
+
+.order-button button {
+    height: 40px;
+    width: max-content;
+    font-size: 18px;
+    background-color: orangered;
+    color: beige;
+    border-radius: 5px;
+    border: 0px;
+    
+}
+
+.flavour button {
+    height: 20px;
+    font-size: 10px;
+    color: beige;
+    border-radius: 5px;
+    border: 0px; 
+}
+
+.choco1 {
+    background-color: orangered;
+}
+.red1 {
+    background-color: orangered;
+}
+.van1 {
+    background-color: orangered;
+}
+
+/* sec4 */
+.sec4 {
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    border: 3px solid #73AD21;
+    margin: auto;
+}
+
+.choco-cake img {
+    width: 250px;
+}
+
+.cake {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cake img {
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    align-content: center;
+    /* padding: 10px 10px; */
+}
+
+.price {
+    display: flex;
+    /* padding: 15px 0px; */
+    justify-content: space-between;
+    
+
+}
+
+.price button {
+    height: 20px;
+    margin: 40px 0px;
+    justify-content: center;
+
+}
+
+.price p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.order-button {
+    align-items: center;
+}
+
+.order-button button {
+    height: 40px;
+    width: max-content;
+    font-size: 18px;
+    background-color: orangered;
+    color: beige;
+    border-radius: 5px;
+    border: 0px;
+    
+}
+
+.flavour button {
+    height: 20px;
+    font-size: 10px;
+    color: beige;
+    border-radius: 5px;
+    border: 0px; 
+}
+
+.choco1 {
+    background-color: orangered;
+}
+.red1 {
+    background-color: orangered;
+}
+.van1 {
+    background-color: orangered;
+}

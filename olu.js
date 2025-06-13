@@ -77,16 +77,36 @@
 
 
 function first() {
-    console.log("This is the first");
     second();
+    console.log("This is the first");
 }
-function first() {
-    console.log("This is the second");
+function second(x) {
+    console.log("This is the second", x);
 }
-function first() {
+second(5);
+function third() {
+     first();
     console.log("This is the third");
 }
 
-first();
-second();
-third();
+// first();
+// second();
+third(5);
+
+
+function wakeup() {
+    console.log("Wake up!");
+    
+}
+function pray() {
+    console.log("I pray!");
+    
+}
+function wakeup() {
+    console.log("Wake up!");
+    
+}
+function wakeup() {
+    console.log("Wake up!");
+    
+}
