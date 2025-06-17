@@ -285,15 +285,33 @@
 
 // console.log(validNumbers);
 
-//this .map function targerts a particular index
+//this .map function targerts a particular index usind the .map and the if statement
+    // const numbers = [12,34,87,45];
+    // const validNumbers = numbers.map((item, index) => {
+    //     if (index === 2) {
+    //         return item *2;
+    //     }
+    //         return item;
+    // });
+    // console.log(validNumbers);
+
+
+
+///using the .reduce hof
+
 const numbers = [12,34,87,45];
-const validNumbers = numbers.map((item, index) => {
-    if (index === 2) {
-        return item *2;
-    }
-        return item;
-});
-console.log(validNumbers);
+const newNumbers = numbers.reduce((accumulator, currentItem) => {
+    return accumulator * currentItem;
+
+}, 2);
+
+console.log(newNumbers);
+
+
+
+
+
+
 
 
 
