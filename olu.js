@@ -221,6 +221,10 @@
 //     })
 // });
 
+
+
+///PROMISES
+
 // function wakeUp(){
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
@@ -253,7 +257,7 @@
 //         .then(value => {console.log(value); console.log("finished")});
 
 
-//ANOTHER WAY TO CREATE AND CALL OBJECTS
+//ANOTHER WAY TO CREATE AND CALL OBJECTS//
 // const myBestFood = new Object();
 
 // myBestFood.firstChoice = "Garri";
@@ -262,7 +266,7 @@
 
 // console.log(myBestFood.firstChoice);
 
-// MATH functions/  OBJECTS / math methods
+// MATH functions/  OBJECTS / math methods//
 
 // console.log(Math.E);
 // console.log(Math.PI);
@@ -271,6 +275,7 @@
 // console.log(Math.LN10);
 // console.log(Math.LOG2E);
 // console.log(Math.LOG10E);
+// console.log(Math.mini);
 
 // console.log(Math.pow(15, 8));
 // console.log(Math.ceil(Math.SQRT1_2));
@@ -278,7 +283,7 @@
 // const Olu = [1, 2, 3];
 // console.log(typeof(Olu));
 
-//Higher order functions and arrays
+//Higher order functions and arrays//
 
 
 // const validNumbers = numbers.filter((item) => item >= 30); //filter order function
@@ -297,15 +302,33 @@
 
 
 
-///using the .reduce hof
+///using the .reduce hof //
 
-const numbers = [12,34,87,45];
-const newNumbers = numbers.reduce((accumulator, currentItem) => {
-    return accumulator * currentItem;
+// const numbers = [12,34,87,45];
+// const newNumbers = numbers.reduce((accumulator, currentItem) => {
+//     return accumulator + currentItem;
 
-}, 2);
+// }, 2);
 
-console.log(newNumbers);
+// console.log(newNumbers);
+
+// const numbers = [12,34,87,45];
+// const newNumbers = numbers.reduce((accumulator, currentItem) => {
+//     return accumulator < currentItem ? accumulator : currentItem;
+
+// }, );
+
+// console.log(newNumbers);
+
+
+const numbers = [18,72,0,53,86];
+const newNumber = numbers.reduce((accumulator, currentItem) => {
+    return accumulator . currentItem ? accumulator : currentItem;
+}, Infinity);
+console.log(newNumber);
+
+
+
 
 
 
