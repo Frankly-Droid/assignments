@@ -76,37 +76,178 @@
 // console.log(validatePhoneNumber(phoneNumber)); // Output: "Phone number is Valid"
 
 
-function first() {
-    second();
-    console.log("This is the first");
-}
-function second(x) {
-    console.log("This is the second", x);
-}
-second(5);
-function third() {
-     first();
-    console.log("This is the third");
+//CALL BACK FUNCTIONS
+
+// function first() {
+//     second();
+//     console.log("This is the first");
+// }
+// function second() {
+//     console.log("This is the second");
+// }
+
+// function third(x) {
+//      first();
+//     console.log("This is the third");
+// }
+
+// // first();
+// // second();
+// third();
+
+
+//ASYNC | AWAIT
+
+// function wakeup() {
+//     console.log("Wake up!");
+    
+// }
+// function pray() {
+//     console.log("I pray!");
+    
+// }
+// function bake() {
+//     console.log("I bake!");
+    
+// }
+// function eat() {
+//     console.log("I eat and got to  work!");
+    
+// }
+
+// function save(savedItem, item2) {
+//      return savedItem + item2;
+// }
+
+// console.log(save(2, 8));
+
+// // save();
+
+
+// // wakeup();
+// // pray();
+// // bake();
+// // eat();
+
+//ARROW FUNCTIONS AND SET TIMEOUT
+
+
+// const fightStart = (fighter, sword, ready) => fighter + " " + sword + " " + ready;
+
+// console.log(fightStart("I", 'am', 'ready'));
+
+// setTimeout(() => {
+//     function greet(name) {
+//     return "Hello, " + name + ", Wlcome to the family!";
+// }
+// console.log(greet("Alice"));
+    
+// }, 5000);
+
+// setTimeout(() => {
+// console.log("processing");
+    
+// }, 1000);
+
+// console.log("I am Oluchukwu and guess what....");
+
+
+// setTimeout(() => {
+//     console.log("I AM GOOD");
+    
+// }, 4000)
+
+
+
+
+// const fetchData = (callback) => setTimeout (() => {
+//     const data = "Adas son";
+//     callback(data);
+// }, 2000);
+
+// function handleData(data) {
+//   console.log("Received:", data);
+// }
+
+// fetchData(handleData);
+// fetchData(); // error.."call back is not a function"
+
+
+// function fetchData(callback) {
+//         callback("Data received");
+// }
+
+// fetchData((data) => {
+//     console.log(data);
+// });
+// console.log(fetchData);
+
+
+// PROMISES : are objects that manages asynchronous operaions
+//            you  wrap promise object around asynchronous codes
+//            the promise object promises to return a value
+//            pending if REDOLVED OR REJECTED
+//      new Promise((resolve, reject) => {asynchronous code});
+
+//DO THESE CHORES
+
+//wake up
+//pray
+//bake
+
+// function wakeUp(callback){
+//     setTimeout(() => {
+//         console.log("Wake up MF!"); 
+//         callback();
+//     }, 1000);
+// }
+// function pray(callback){
+//     setTimeout(() => {
+//         console.log("Get on your knees and pray");
+//         callback(); 
+//     }, 2000);
+// }
+// function bake(callback){
+//     setTimeout(() => {
+//         console.log("Now bake the fuck up MF!"); 
+//         callback();
+//     }, 700);
+// }
+
+
+// wakeUp(() => {
+//     pray(() => {
+//         bake(() => console.log("you have finised!"));   
+//     })
+// });
+
+function wakeUp(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve("Wake up MF!"); 
+    }, 1000);    
+    });
 }
 
-// first();
-// second();
-third(5);
+
+function pray(){
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+        resolve("Get on your knees and pray"); 
+        }, 2000);
+        });
+}
 
 
-function wakeup() {
-    console.log("Wake up!");
+function bake(){
+        return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve("Now bake the fuck up MF!"); 
+    }, 700);
+    });
     
 }
-function pray() {
-    console.log("I pray!");
-    
-}
-function wakeup() {
-    console.log("Wake up!");
-    
-}
-function wakeup() {
-    console.log("Wake up!");
-    
-}
+
+wakeUp().then(value => {console.log(value); return pray()})
+        .then(value => {console.log(value); return bake()})
+        .then(value => {console.log(value); console.log("finished")});
