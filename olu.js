@@ -221,33 +221,79 @@
 //     })
 // });
 
-function wakeUp(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-        resolve("Wake up MF!"); 
-    }, 1000);    
-    });
-}
+// function wakeUp(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//         resolve("Wake up MF!"); 
+//     }, 1000);    
+//     });
+// }
 
 
-function pray(){
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-        resolve("Get on your knees and pray"); 
-        }, 2000);
-        });
-}
+// function pray(){
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//         resolve("Get on your knees and pray"); 
+//         }, 2000);
+//         });
+// }
 
 
-function bake(){
-        return new Promise((resolve, reject) => {
-        setTimeout(() => {
-        resolve("Now bake the fuck up MF!"); 
-    }, 700);
-    });
+// function bake(){
+//         return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//         resolve("Now bake the fuck up MF!"); 
+//     }, 700);
+//     });
     
-}
+// }
 
-wakeUp().then(value => {console.log(value); return pray()})
-        .then(value => {console.log(value); return bake()})
-        .then(value => {console.log(value); console.log("finished")});
+// wakeUp().then(value => {console.log(value); return pray()})
+//         .then(value => {console.log(value); return bake()})
+//         .then(value => {console.log(value); console.log("finished")});
+
+
+//ANOTHER WAY TO CREATE AND CALL OBJECTS
+// const myBestFood = new Object();
+
+// myBestFood.firstChoice = "Garri";
+// myBestFood.secondChoice = "Rice";
+// myBestFood.thirdChoice = "Beans";
+
+// console.log(myBestFood.firstChoice);
+
+// MATH functions/  OBJECTS / math methods
+
+// console.log(Math.E);
+// console.log(Math.PI);
+// console.log(Math.SQRT2);
+// console.log(Math.LN2);
+// console.log(Math.LN10);
+// console.log(Math.LOG2E);
+// console.log(Math.LOG10E);
+
+// console.log(Math.pow(15, 8));
+// console.log(Math.ceil(Math.SQRT1_2));
+
+// const Olu = [1, 2, 3];
+// console.log(typeof(Olu));
+
+//Higher order functions and arrays
+
+
+// const validNumbers = numbers.filter((item) => item >= 30); //filter order function
+
+// console.log(validNumbers);
+
+//this .map function targerts a particular index
+const numbers = [12,34,87,45];
+const validNumbers = numbers.map((item, index) => {
+    if (index === 2) {
+        return item *2;
+    }
+        return item;
+});
+console.log(validNumbers);
+
+
+
